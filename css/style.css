@@ -1,0 +1,157 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url(../fonts/raleway-bold-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url(../fonts/raleway-light-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url(../fonts/raleway-medium-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-medium-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url(../fonts/raleway-regular-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url(../fonts/raleway-thin-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-thin-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_width {
+    width: 1024px;
+    margin: 0 auto;
+}
+.green_color {
+    color: #27C7AB;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'ralewaybold', Arial, sans-serif;
+    display: inline-block;
+}
+
+#logo {
+    font-size: 16px;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+}
+span {
+    font-family: 'ralewaybold', Arial, sans-serif;
+}
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+.menu {
+    float: right;
+    text-align: center;
+}
+#slider {
+    background-image: linear-gradient(180deg, white, grey);
+}
+
+/* PHOTOS SECTION */
+
+/* PRICE SECTION */
+
+
+#price_boxes {
+    display: flex;
+}
+.box {
+    width: 220px;
+    border: 3px solid black;
+    margin: 50px 20px 20px 20px;
+    position: relative;
+}
+.text {
+    padding: 20px
+}
+h1 {
+    font-size: 1.2em;
+    padding-top: 20px;
+}
+.price_circle {
+    font-size: 12px;
+    padding: 5px;
+}
+.plan_list li {
+    list-style: none;
+}
+a.button {
+    padding-top: 7px;
+    color: white;
+    width: 70%;
+    height: 30px;
+    background-color: black;
+    margin: 7px auto;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.circle {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 50px;
+    position: absolute;
+    left: 78px;
+    top: -35px;
+}
+.inner_circle {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    margin: 0 auto;
+    top: 13px;
+    left: 13px;
+}
+
+/* CONTACT FORM SECTION */
+
+/* FOOTER SECTION */
