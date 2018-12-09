@@ -88,66 +88,59 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .container {
-    width: 1024px;
-    margin: 0 auto;
-} */
+
 div.main_width {
-    width: 1417px;
+    width: 1200px;
     margin: 0 auto;
-    /* margin: 16px;
-    padding-left: 76px;
-    padding-right: 76px; */
 }
-.green_color {
+.green_color, .gtlt, #more_button {
     color: #27C7AB;
 }
 
 /* HEADER */
 
 header {
-    width: 100%;
+    width: 1200px;
     background-color: black;
     color: white;
     display: inline-block;
-    font-size: 19px;
+    font-size: 15px;
     text-align: center;
-    line-height: 52px;
+    height: 41px;
 }
 
 #logo {
     font-family: 'ralewaymedium', Arial, sans-serif;
     float: left;
-    margin: 0 auto;
     text-align: center;
-    padding-top: 3px;
-    padding-left: 2px;
+    padding-top: 12px;
+    padding-left: 68px;
 }
-span {
+span.bolder {
     font-family: 'ralewayextrabold', Arial, sans-serif;
-}
-.menu li {
-    font-family: 'ralewaybold', Arial, sans-serif;
-    display: inline-block;
-    padding-left: 52px;
-    padding-top: 3px;
-}
-.menu li:first-of-type {
-    padding-right: 19px;
 }
 .menu {
     float: right;
     text-align: center;
-    margin-right: 12px;
 }
-#slider {
-    background-image: linear-gradient(180deg, white, grey);
+.menu li {
+    font-family: 'ralewaybold', Arial, sans-serif;
+    display: inline-block;
+    padding-top: 12px;
 }
+.menu li:nth-of-type(2) {
+    margin-left: 52px;
+}
+.menu li:last-of-type {
+    margin-left: 39px;
+    margin-right: 78px;
+}
+
 
 /* SLIDER SECTION */
 
-section:first-of-type, #slider{
-    width: 100%;
+section:first-of-type {
+    width: 1200px;
     background-image: background: rgba(255,255,255,1);
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(208,208,216,1)));
@@ -156,33 +149,79 @@ section:first-of-type, #slider{
     background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d0d0d8', GradientType=0 );;
+    height: 504px;
 }
-div#slider_image, div#slider_text {
-    border: 1px solid red;
+#slider {
     display: inline-block;
-    width: 50%;
+    position: relative;
+    height: 504px;
 
 }
+div#slider_image, div#slider_text {
+    display: inline-block;
+    position: relative;
+}
 #slider_image {
-    width: 470px;
+    width: 544px;
     height: 337px;
     background-image: url(../images/black_chair.png);
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
+    top: 71px;
+    left: -73px;
 }
 div#slider_text {
-    float: right;
+    top: 78px;
+    right: 81px;
     text-align: center;
-    padding: 200px;
+    width: 415px;
+    font-size: 15px;
+    font-family: 'ralewayregular', Arial, sans-serif;
+    line-height: 21px;
+}
+#slider_text h1 {
+    font-size: 40px;
+    line-height: 107px;
+}
+span.bold {
+    font-family: 'ralewaybold', Arial, sans-serif;
+}
+.gtlt {
+    font-family: 'ralewaylight', Arial, sans-serif;
+    font-size: 60px;
+}
+span.l {
+    float: left;
+    padding-top: 205px;
+    padding-left: 6px;
+    margin-left: 74px;
+}
+span.r {
+    float: right;
+    padding-top: 205px;
+    padding-left: 26px;
 }
 div.clearfix:after {
     content: "";
     clear: both;
-    display: block;
 }
-#slider_image:before {
-    content: "<"
+p#more_button {
+    height: 52px;
+    width: 264px;
+    font-size: 22px;
+    font-family: 'ralewaymedium', Arial, sans-serif;
+    background-color: #27C7AB;
+    position: relative;
+    border-radius: 5px;
+    top: 20px;
+    left: 75px;
+    padding-top: 15px;
+}
+#more_button a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
 /* PHOTOS SECTION */
 
