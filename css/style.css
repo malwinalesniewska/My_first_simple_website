@@ -45,6 +45,42 @@
 
 }
 
+@font-face {
+    font-family: 'ralewayblack';
+    src: url(../fonts/raleway-black-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-black-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url(../fonts/raleway-extrabold-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-extrabold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url(../fonts/raleway-extralight-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-extralight-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url(../fonts/raleway-semibold-webfont.woff2) format('woff2'),
+    url(../fonts/raleway-semibold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* STYLE */
 
 * {
@@ -52,9 +88,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main_width {
+/* .container {
     width: 1024px;
     margin: 0 auto;
+} */
+div.main_width {
+    width: 1417px;
+    margin: 0 auto;
+    /* margin: 16px;
+    padding-left: 76px;
+    padding-right: 76px; */
 }
 .green_color {
     color: #27C7AB;
@@ -66,38 +109,90 @@ header {
     width: 100%;
     background-color: black;
     color: white;
-    font-family: 'ralewaybold', Arial, sans-serif;
     display: inline-block;
+    font-size: 19px;
+    text-align: center;
+    line-height: 52px;
 }
 
 #logo {
-    font-size: 16px;
+    font-family: 'ralewaymedium', Arial, sans-serif;
     float: left;
     margin: 0 auto;
     text-align: center;
+    padding-top: 3px;
+    padding-left: 2px;
 }
 span {
-    font-family: 'ralewaybold', Arial, sans-serif;
+    font-family: 'ralewayextrabold', Arial, sans-serif;
 }
 .menu li {
+    font-family: 'ralewaybold', Arial, sans-serif;
     display: inline-block;
-    padding: 10px;
+    padding-left: 52px;
+    padding-top: 3px;
+}
+.menu li:first-of-type {
+    padding-right: 19px;
 }
 .menu {
     float: right;
     text-align: center;
+    margin-right: 12px;
 }
 #slider {
     background-image: linear-gradient(180deg, white, grey);
 }
 
+/* SLIDER SECTION */
+
+section:first-of-type, #slider{
+    width: 100%;
+    background-image: background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(208,208,216,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d0d0d8', GradientType=0 );;
+}
+div#slider_image, div#slider_text {
+    border: 1px solid red;
+    display: inline-block;
+    width: 50%;
+
+}
+#slider_image {
+    width: 470px;
+    height: 337px;
+    background-image: url(../images/black_chair.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+div#slider_text {
+    float: right;
+    text-align: center;
+    padding: 200px;
+}
+div.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#slider_image:before {
+    content: "<"
+}
 /* PHOTOS SECTION */
 
 /* PRICE SECTION */
 
 
-#price_boxes {
+.price_boxes {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .box {
     width: 220px;
@@ -155,3 +250,6 @@ a.button {
 /* CONTACT FORM SECTION */
 
 /* FOOTER SECTION */
+#footer {
+    display: flex;
+}
