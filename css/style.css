@@ -100,7 +100,7 @@ div.main_width {
 /* HEADER */
 
 header {
-    width: 1200px;
+    width: 100%;
     background-color: black;
     color: white;
     display: inline-block;
@@ -140,7 +140,7 @@ span.bolder {
 /* SLIDER SECTION */
 
 section:first-of-type {
-    width: 1200px;
+    width: 100%;
     background-image: background: rgba(255,255,255,1);
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(208,208,216,1)));
@@ -224,6 +224,48 @@ p#more_button {
     text-align: center;
 }
 /* PHOTOS SECTION */
+
+section:nth-of-type(2) {
+    width: 1200px;
+}
+#photos_flex {
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    padding-top: 27px;
+}
+.chair {
+    border: 1px solid lightgrey;
+    width: 329px;
+    height: 225px;
+}
+.clair {
+    background-image: url("../images/box1_img.jpg");
+}
+.margarita {
+    background-image: url("../images/box2_img.jpg");
+}
+#inputs {
+    background-image: url("../images/inputs.png");
+    width: 340px;
+    height: 254px;
+}
+.description {
+    font-family: 'ralewayregular', Arial, sans-serif;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    margin-top: 149px;
+    position: relative;
+}
+.underline {
+    background-color: #27C7AB;
+    height: 7px;
+    width: 138px;
+    position: absolute;
+    margin-top: -29px;
+    margin-left: 13px;
+}
 
 /* PRICE SECTION */
 
