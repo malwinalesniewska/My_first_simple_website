@@ -143,7 +143,8 @@ section:first-of-type {
     width: 100%;
     background-image: background: rgba(255,255,255,1);
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(208,208,216,1)));
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)),
+    color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(208,208,216,1)));
     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
     background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
     background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(208,208,216,1) 100%);
@@ -233,6 +234,7 @@ section:nth-of-type(2) {
     justify-content: space-between;
     height: 350px;
     padding-top: 27px;
+    margin-left: 155px;
 }
 .chair {
     border: 1px solid lightgrey;
@@ -251,20 +253,23 @@ section:nth-of-type(2) {
     height: 254px;
 }
 .description {
-    font-family: 'ralewayregular', Arial, sans-serif;
+    font-family: 'ralewaymedium', Arial, sans-serif;
     height: 62px;
     background-color: rgba(255, 255, 255, 0.3);
     color: black;
     margin-top: 149px;
     position: relative;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 20px;
 }
-.underline {
-    background-color: #27C7AB;
-    height: 7px;
+.chair_name:after {
+    content: '';
     width: 138px;
+    border-bottom: 7px solid #27C7AB;
     position: absolute;
-    margin-top: -29px;
-    margin-left: 13px;
+    display: block;
+
 }
 
 /* PRICE SECTION */
