@@ -135,7 +135,10 @@ span.bolder {
     margin-left: 39px;
     margin-right: 78px;
 }
-
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
 
 /* SLIDER SECTION */
 
@@ -184,6 +187,7 @@ div#slider_text {
 #slider_text h1 {
     font-size: 40px;
     line-height: 107px;
+    padding-top: 20px;
 }
 span.bold {
     font-family: 'ralewaybold', Arial, sans-serif;
@@ -269,36 +273,53 @@ section:nth-of-type(2) {
     border-bottom: 7px solid #27C7AB;
     position: absolute;
     display: block;
-
 }
 
+#photos_flex:after {
+    content: "";
+    clear: both;
+}
 /* PRICE SECTION */
 
-
+#priceBoxesSextion {
+    width: 100%;
+    background-color: #f1f1f1;
+    font-family: "ralewayregular", Arial, sans-serif;
+}
+#pricesHeader {
+    margin-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+#pricesHeader:after {
+    content: '';
+    width: 316px;
+    border-bottom: 7px solid #27C7AB;
+    position: absolute;
+    display: block;
+}
 .price_boxes {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    margin-left: 90px;
+    margin-right: 100px;
 }
 .box {
-    width: 220px;
-    border: 3px solid black;
-    margin: 50px 20px 20px 20px;
+    border: 2px solid #c2c2c2;
+    margin: 50px 10px 20px 10px;
     position: relative;
-}
-.text {
-    padding: 20px
-}
-h1 {
-    font-size: 1.2em;
-    padding-top: 20px;
-}
-.price_circle {
-    font-size: 12px;
-    padding: 5px;
+    flex: 1 0 auto;
+    background-color: #f9f9f9;
 }
 .plan_list li {
     list-style: none;
+    text-align: center;
+    background-color: #e4e4e4;
+    color: #c2c2c2;
+}
+.plan_list li:nth-of-type(2n) {
+    background-color: #f1f1f1;
 }
 a.button {
     padding-top: 7px;
@@ -316,23 +337,76 @@ a.button {
     background-color: white;
     width: 60px;
     height: 60px;
-    border: 3px solid black;
+    border: 2px solid #c2c2c2;
     border-radius: 50px;
     position: absolute;
-    left: 78px;
-    top: -35px;
+    left: 43%;
+    top: -33px;
 }
 .inner_circle {
     width: 30px;
     height: 30px;
-    background-color: black;
+    background-color: #c2c2c2;
     border-radius: 50px;
     position: absolute;
     margin: 0 auto;
     top: 13px;
     left: 13px;
 }
+.price_circle {
+    font-size: 12px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 5px 5px;
+    border: 2px solid #c2c2c2;
+    color: #c2c2c2;
+    margin-bottom: 20px;
+}
+.standard-plan-pricecircle {
+    background-color: #f9f9f9;
+    border: 2px solid transparent;
+    color: #27C7AB;
+}
+.box:nth-of-type(2) {
+    background-color: #27c7ab;
+    border: 2px solid transparent;
+}
+.standard-plan-circle {
+    background-color: #27C7AB;
+    border: 2px solid transparent;
+}
+.standard-plan-innercircle {
+    background-color: #f9f9f9;
+}
+.box h1{
+    color: #27C7AB;
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
 
+#standardPlanHeader {
+    color: white;
+}
+
+.price {
+    font-family: "ralewaybold", Arial, sans-serif;
+    font-size: 44px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+.price sup {
+    font-size: 15px;
+}
+.currency {
+    font-family: "ralewaybold", Arial, sans-serif;
+    font-size: 15px;
+}
 /* CONTACT FORM SECTION */
 
 /* FOOTER SECTION */
