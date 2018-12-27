@@ -281,14 +281,14 @@ section:nth-of-type(2) {
 }
 /* PRICE SECTION */
 
-#priceBoxesSextion {
+#priceBoxesSection {
     width: 100%;
     background-color: #f1f1f1;
     font-family: "ralewayregular", Arial, sans-serif;
 }
 #pricesHeader {
     margin-left: 100px;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
     font-size: 20px;
 }
@@ -307,31 +307,55 @@ section:nth-of-type(2) {
 }
 .box {
     border: 2px solid #c2c2c2;
-    margin: 50px 10px 20px 10px;
+    margin: 50px 10px 70px 10px;
     position: relative;
     flex: 1 0 auto;
     background-color: #f9f9f9;
+    height: 500px;
 }
 .plan_list li {
     list-style: none;
     text-align: center;
     background-color: #e4e4e4;
-    color: #c2c2c2;
+    color: #949494;
+    font-size: 25px;
+    height: 45px;
+    padding-top: 7px;
 }
 .plan_list li:nth-of-type(2n) {
     background-color: #f1f1f1;
+    color: #767676;
+}
+.standard_plan li {
+    background-color: #fff;
+    color: #9e9e9e;
+}
+.standard_plan li:nth-of-type(2n) {
+    background-color: #f1f1f1;
+    color: #9d9d9d;
 }
 a.button {
-    padding-top: 7px;
+    padding-top: 6px;
     color: white;
-    width: 70%;
-    height: 30px;
-    background-color: black;
-    margin: 7px auto;
-    font-size: 13px;
+    background-color: #27C7AB;
+    margin: 0 auto;
+    font-size: 18px;
     text-align: center;
     display: block;
     text-decoration: none;
+    border-radius: 7px;
+    width: 122px;
+    height: 34px;
+    margin-top: 112px;
+}
+a.standard-plan-button {
+    margin-top: 68px;
+    color: #27C7AB;
+    background-color: white;
+}
+a.advance-plan-button {
+    margin-top: 24px;
+
 }
 .circle {
     background-color: white;
@@ -340,7 +364,7 @@ a.button {
     border: 2px solid #c2c2c2;
     border-radius: 50px;
     position: absolute;
-    left: 43%;
+    left: 41%;
     top: -33px;
 }
 .inner_circle {
@@ -364,7 +388,7 @@ a.button {
     padding: 20px 5px 5px;
     border: 2px solid #c2c2c2;
     color: #c2c2c2;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .standard-plan-pricecircle {
     background-color: #f9f9f9;
@@ -408,6 +432,63 @@ a.button {
     font-size: 15px;
 }
 /* CONTACT FORM SECTION */
+section:nth-of-type(4) {
+    width: 1200px;
+    font-family: "ralewayregular", Arial, sans-serif;
+}
+#form_image {
+    background-image: url("../images/red_chair.png");
+    width: 264px;
+    height: 210px;
+}
+form {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 150px;
+
+}
+.form_right,
+.form_left {
+    display: flex;
+    flex-direction: column;
+}
+.form_left {
+    flex-grow: 2;
+}
+.form_left input,
+.form_left textarea {
+    margin: 10px 10px;
+    height: 60px;
+    border: 1px solid #27C7AB;
+    flex-grow: 2;
+    font-size: 30px;
+    font-family: "ralewayregular", Arial, sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+    color: #9d9d9d;
+}
+.form_left textarea {
+    height: 189px;
+}
+.form_right #form_image,
+.form_right input {
+    flex-grow: 1;
+}
+#contact {
+    margin-left: 75px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+#contact:after {
+    content: '';
+    width: 316px;
+    border-bottom: 7px solid #27C7AB;
+    position: absolute;
+    display: block;
+}
 
 /* FOOTER SECTION */
 #footer {
