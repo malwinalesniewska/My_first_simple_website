@@ -231,14 +231,15 @@ p#more_button {
 /* PHOTOS SECTION */
 
 section:nth-of-type(2) {
-    width: 1200px;
+    width: 100%;
 }
 #photos_flex {
     display: flex;
     justify-content: space-between;
     height: 350px;
     padding-top: 27px;
-    margin-left: 155px;
+    margin-left: 75px;
+    margin-right: 40px;
 }
 .chair {
     border: 1px solid lightgrey;
@@ -287,7 +288,7 @@ section:nth-of-type(2) {
     font-family: "ralewayregular", Arial, sans-serif;
 }
 #pricesHeader {
-    margin-left: 100px;
+    margin-left: 75px;
     padding-top: 30px;
     padding-bottom: 20px;
     font-size: 20px;
@@ -302,8 +303,8 @@ section:nth-of-type(2) {
 .price_boxes {
     display: flex;
     justify-content: center;
-    margin-left: 90px;
-    margin-right: 100px;
+    margin-left: 65px;
+    margin-right: 55px;
 }
 .box {
     border: 2px solid #c2c2c2;
@@ -433,20 +434,22 @@ a.advance-plan-button {
 }
 /* CONTACT FORM SECTION */
 section:nth-of-type(4) {
-    width: 1200px;
+    width: 100%;
     font-family: "ralewayregular", Arial, sans-serif;
+    margin-bottom: 20px;
+
 }
 #form_image {
     background-image: url("../images/red_chair.png");
     width: 264px;
     height: 210px;
+
 }
 form {
     display: flex;
     align-items: center;
-    margin-right: 30px;
-    margin-left: 150px;
-
+    margin-right: 40px;
+    margin-left: 70px;
 }
 .form_right,
 .form_left {
@@ -454,7 +457,11 @@ form {
     flex-direction: column;
 }
 .form_left {
-    flex-grow: 2;
+    flex: 2 0 auto;
+    margin-right: 20px;
+}
+.form_right {
+    flex: 1 0 auto;
 }
 .form_left input,
 .form_left textarea {
@@ -472,10 +479,6 @@ textarea::placeholder {
 .form_left textarea {
     height: 189px;
 }
-.form_right #form_image,
-.form_right input {
-    flex-grow: 1;
-}
 #contact {
     margin-left: 75px;
     padding-top: 30px;
@@ -489,7 +492,30 @@ textarea::placeholder {
     position: absolute;
     display: block;
 }
-
+#checkboxDataProcessing {
+    display: none;
+}
+#labelDataProcessing {
+    border: 1px solid #27C7AB;
+    width: 48px;
+    height: 49px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 20px;
+    color: #acacac;
+}
+#checkboxDataProcessing:checked + #labelDataProcessing {
+    background-image: url("../images/form_ok.jpg");
+}
+input[type=submit] {
+    font-family: "ralewaybold", Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: #27C7AB;
+    border-radius: 5px;
+    border: none;
+    height: 60px;
+}
 /* FOOTER SECTION */
 #footer {
     display: flex;
