@@ -443,12 +443,14 @@ section:nth-of-type(4) {
     background-image: url("../images/red_chair.png");
     width: 264px;
     height: 210px;
-
+    margin-left: 27px;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
 }
 form {
     display: flex;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 60px;
     margin-left: 70px;
 }
 .form_right,
@@ -458,19 +460,26 @@ form {
 }
 .form_left {
     flex: 2 0 auto;
-    margin-right: 20px;
+    width: 600px;
 }
 .form_right {
     flex: 1 0 auto;
+    margin-left: 10px;
+    margin-bottom: 30px;
 }
 .form_left input,
 .form_left textarea {
     margin: 10px 10px;
     height: 60px;
     border: 1px solid #27C7AB;
-    flex-grow: 2;
+    flex: 2 0 auto;
     font-size: 30px;
     font-family: "ralewayregular", Arial, sans-serif;
+}
+.form_right #form_image,
+.form_right #labelCheckBox,
+.form_right input {
+    flex: 1 0 auto;
 }
 input::placeholder,
 textarea::placeholder {
@@ -492,21 +501,46 @@ textarea::placeholder {
     position: absolute;
     display: block;
 }
-#checkboxDataProcessing {
-    display: none;
+
+#labelCheckBox {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 67px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #b7b7b7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-#labelDataProcessing {
-    border: 1px solid #27C7AB;
-    width: 48px;
-    height: 49px;
+
+/* Hide the browser's default checkbox */
+#labelCheckBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    width: 47px;
+    border: 1px solid #27c7ab;
+}
+
+/* When the checkbox is checked, add an icon */
+#labelCheckBox input:checked ~ .checkmark {
+    background-image: url("../images/form_ok.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    font-size: 20px;
-    color: #acacac;
 }
-#checkboxDataProcessing:checked + #labelDataProcessing {
-    background-image: url("../images/form_ok.jpg");
-}
+
 input[type=submit] {
     font-family: "ralewaybold", Arial, sans-serif;
     font-size: 24px;
@@ -515,6 +549,7 @@ input[type=submit] {
     border-radius: 5px;
     border: none;
     height: 60px;
+    margin-right: 10px;
 }
 /* FOOTER SECTION */
 #footer {
