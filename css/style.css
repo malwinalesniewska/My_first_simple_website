@@ -436,7 +436,7 @@ a.advance-plan-button {
 section:nth-of-type(4) {
     width: 100%;
     font-family: "ralewayregular", Arial, sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
 }
 #form_image {
@@ -451,7 +451,7 @@ form {
     display: flex;
     align-items: center;
     margin-right: 60px;
-    margin-left: 70px;
+    margin-left: 65px;
 }
 .form_right,
 .form_left {
@@ -554,4 +554,28 @@ input[type=submit] {
 /* FOOTER SECTION */
 #footer {
     display: flex;
+    width: 100%;
+    margin-left: 73px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#fleft {
+    color: #969696;
+    font-size: 16px;
+    font-family: "ralewayregular", Arial, sans-serif;
+    align-self: flex-end;
+}
+#fright {
+    margin-right: 143px;
+    align-self: flex-end;
+    font-family: 'ralewaybold', Arial, sans-serif;
+    font-size: 20px;
+    color: #9a9a9a;
+    margin-bottom: 2px;
+}
+#onFooter {
+    font-family: "ralewayextrabold", Arial, sans-serif;
+}
+#fimages {
+    margin-right: -112px;
 }
